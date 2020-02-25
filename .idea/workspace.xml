@@ -1,8 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cb4e2a11-6b27-4958-b7ce-bd453060ba30" name="Default Changelist" comment="" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <list default="true" id="cb4e2a11-6b27-4958-b7ce-bd453060ba30" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/src.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/src.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/serializers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/communications/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/communications/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/leaders/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/leaders/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mbwira/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/mbwira/settings.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,22 +24,20 @@
       </list>
     </option>
   </component>
-  <component name="ProjectId" id="1Uc3QlNtTmd9G5VVWiYR4DJrG1o" />
-  <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
+  <component name="ProjectId" id="1Uc3QlNtTmd9G5VVWiYR4DJrG1o" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="D:/projects/techbooster" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -44,5 +51,36 @@
       <updated>1575642041917</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="-1128" y="89" key="#Notifications" timestamp="1582555822638">
+      <screen x="-1440" y="0" width="1440" height="860" />
+    </state>
+    <state x="-1128" y="89" key="#Notifications/0.0.1920.1040/-1440.0.1440.860@-1440.0.1440.860" timestamp="1582555822638" />
+    <state x="-941" y="185" key="FileChooserDialogImpl" timestamp="1582623015355">
+      <screen x="-1440" y="0" width="1440" height="860" />
+    </state>
+    <state x="-941" y="185" key="FileChooserDialogImpl/0.0.1920.1040/-1440.0.1440.860@-1440.0.1440.860" timestamp="1582623015355" />
+    <state x="-1219" y="73" key="SettingsEditor" timestamp="1582560731625">
+      <screen x="-1440" y="0" width="1440" height="860" />
+    </state>
+    <state x="-1219" y="73" key="SettingsEditor/0.0.1920.1040/-1440.0.1440.860@-1440.0.1440.860" timestamp="1582560731625" />
+    <state x="-1024" y="255" key="com.intellij.ide.util.TipDialog" timestamp="1582560184098">
+      <screen x="-1440" y="0" width="1440" height="860" />
+    </state>
+    <state x="-1024" y="255" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/-1440.0.1440.860@-1440.0.1440.860" timestamp="1582560184098" />
   </component>
 </project>

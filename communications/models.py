@@ -6,7 +6,7 @@ from citizens.models import Citizen
 
 class CommunicationToVillage(models.Model):
     message = models.TextField()
-    cell = models.ForeignKey(Village, on_delete=models.CASCADE)
+    village = models.ForeignKey(Village, on_delete=models.CASCADE)
     author = models.ForeignKey(Citizen, on_delete=models.CASCADE)
     pub_date = models.DateTimeField()
 
@@ -20,20 +20,20 @@ class CommunicationsToCell(models.Model):
 
 class CommunicationToSector(models.Model):
     message = models.TextField()
-    cell = models.ForeignKey(Sector, on_delete=models.CASCADE)
+    sector = models.ForeignKey(Sector, on_delete=models.CASCADE)
     author = models.ForeignKey(Citizen, on_delete=models.CASCADE)
     pub_date = models.DateTimeField()
 
 
 class CommunicationToDistrict(models.Model):
     message = models.TextField()
-    cell = models.ForeignKey(District, on_delete=models.CASCADE)
+    district = models.ForeignKey(District, on_delete=models.CASCADE)
     author = models.ForeignKey(Citizen, on_delete=models.CASCADE)
     pub_date = models.DateTimeField()
 
 
 class CommunicationToProvince(models.Model):
     message = models.TextField()
-    cell = models.ForeignKey(Province, on_delete=models.CASCADE)
+    province = models.ForeignKey(Province, on_delete=models.CASCADE)
     author = models.ForeignKey(Citizen, on_delete=models.CASCADE)
     pub_date = models.DateTimeField()

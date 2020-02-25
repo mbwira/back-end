@@ -13,4 +13,4 @@ class UserSerializer(serializers.HyperlinkedModelSerializer):
 class AddressBookSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Province
-        fields = ['id']
+        fields = ['id', 'province']
