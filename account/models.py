@@ -3,21 +3,22 @@ from django.contrib.auth.models import AbstractBaseUser, BaseUserManager
 from django.contrib.auth.models import PermissionsMixin
 
 class AccountManager(BaseUserManager):
-	def create_user(self, email, date_of_birth, password=None):
+	def create_user(self, email, username, date_of_birth, password=None):
 		"""Creates and saves a User with the given email, date of birth and password."""
 		if not email:
 			raise ValueError('Users must have an email address')
 
 		user = self.model(
 			email=self.normalize_email(email),
-			date_of_birth=date_of_birth,
+			username=username,
+			date_of_birth = date_of_birth
         )
 
 		user.set_password(password)
 		user.save(using=self._db)
 		return user
 
-	def create_superuser(self, email, date_of_birth, password=None):
+	def create_superuser(self, email, username,date_of_birth, password=None):
 		"""
 		Creates and saves a superuser with the given email, date of
 		birth and password.
@@ -25,7 +26,8 @@ class AccountManager(BaseUserManager):
 		user = self.create_user(
 			email,
 			password=password,
-			date_of_birth=date_of_birth,
+			username=username,
+			date_of_birth = date_of_birth
 		)
 		user.is_admin = True
 		user.save(using=self._db)
@@ -39,13 +41,17 @@ class Account(AbstractBaseUser, PermissionsMixin):
         unique=True,
     )
 	date_of_birth = models.DateField()
+	username = models.CharField(max_length = 30, unique = True)
+	first_name = models.CharField(max_length = 20)
+	last_name = models.CharField(max_length = 20)
+	n_id = models.TextField(max_length = 50, unique = True)
 	is_active = models.BooleanField(default=True)
 	is_admin = models.BooleanField(default=False)
 
 	objects = AccountManager()
 
 	USERNAME_FIELD = 'email'
-	REQUIRED_FIELDS = ['date_of_birth']
+	REQUIRED_FIELDS = ['username', 'date_of_birth',]
 
 	def __str__(self):
 		return self.email

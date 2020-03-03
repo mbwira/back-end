@@ -50,3 +50,4 @@ class Addresses(models.Model):
     cell = models.ForeignKey(Cell, on_delete=models.CASCADE)
     village = models.ForeignKey(Village, on_delete=models.CASCADE)
     street_address = models.CharField(max_length=50)
+    phone_number = models.CharField(max_length = 11)
