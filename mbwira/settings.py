@@ -25,16 +25,21 @@ SECRET_KEY = 'mpevd@$8)hiyrnn%-pe%yh@9%t!(gtq5%pgkp1f#r0p9%3y27p'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'localhost',
+    '172.17.24.81',
+    '127.0.0.1',
+
+]
 
 
 # Application definition
 
 INSTALLED_APPS = [
     'addressbook.apps.AddressbookConfig',
+    'account.apps.AccountConfig',
     'leaders.apps.LeadersConfig',
     'communications.apps.CommunicationsConfig',
-    'citizens.apps.CitizensConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -71,6 +76,8 @@ TEMPLATES = [
         },
     },
 ]
+
+AUTH_USER_MODEL = 'account.Account'
 
 WSGI_APPLICATION = 'mbwira.wsgi.application'
 
